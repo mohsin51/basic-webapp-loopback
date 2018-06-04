@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <% include partials/templates/head.ejs %>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <title><%= siteTitle %></title>
+</head>
+
+<body>
+  <h1>Signup</h1>
+  <div id="Signup-form">
+
+  <!-- <form onSubmit="javascript:submitFunc(event)">  -->
+  <form method="POST" action="/SignupForm">
+      <div class="form-group">
+        <label for="usrf">Firstname:</label>
+        <input type="text" class="form-control" name="firstname" id="usrf" required>
+      </div>
+      <div class="form-group">
+        <label for="usrl"> LastName:</label>
+        <input type="text" class="form-control"  name="lastname" id="usrl" required>
+      </div>
+      <div class="form-group">
+        <label for="email"> Email address:</label>
+        <input type="email" class="form-control"  name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd"> Password:</label>
+        <input type="password" class="form-control"  name="password"  id="pwd" required>
+      </div>
+      <div class="form-group">
+        <label for="cpwd"> Confirm Password:</label>
+        <input type="password" class="form-control"  name="confirmpassword"  id="cpwd" required>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" name ="cb" > Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button><input type="button" class= "btn btn-default" onclick="location.href='login';" value="login" />
+    </form>
+
+        <div id="msgDiv">
+        <% if (error !== null) { %>
+        <h2>  <%=  error %> <h2>
+        <% } %>
+        </div>
+
+  </div> 
+</body>
+
+
+<!-- <script type="text/javascript" src="signup.js"></script> -->
+</html>
+
+

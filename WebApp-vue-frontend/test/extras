@@ -1,0 +1,37 @@
+
+// describe.only('axios', () => {
+//   let sandbox;
+//   let server;
+//   beforeEach(() => {
+//     sandbox = sinon.sandbox.create();
+//     server = sandbox.useFakeServer();
+//   });
+//   afterEach(() => {
+//     server.restore();
+//     sandbox.restore();
+//   });
+
+
+//   it('should display a blankslate', (done) => {
+
+//        let paginatedObj={
+//             pageCount:0,
+//             currPage:1,
+//             skip:0,
+//             limit:4
+//         };
+
+//     PostApi.getPosts(paginatedObj)
+//     .then((postsArr)=>{
+//         expect(res).to.have.status(200);
+
+//     })
+
+//     setTimeout(() => server.respond([200,
+//         { 'Content-Type': 'application/json'},
+//         '[]']), 0);
+   
+//   });
+
+
+// });

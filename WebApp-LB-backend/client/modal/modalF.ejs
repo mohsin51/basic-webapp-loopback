@@ -1,0 +1,146 @@
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">
+          Add Post
+        </h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+
+        <form class="form-horizontal" id="modal-form" action="/postForm" method="post" role="form"  enctype="multipart/form-data" >
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="modalName">Title</label>
+            <div>
+              <input type="text" class="form-control" id="modalName" name="name" placeholder="Title" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="modalType">Type</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="type" id="modalType" required>
+                <option value="Education">Education</option>
+                <option value="Full Course">Full Course</option>
+                <option value="Novel">Novel</option>
+                <option value="Magazine">Magazine</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="modalGrade">Grade</label>
+            <div class="col-sm-10">
+              <select class="form-control" name="grade" id="modalGrade" required>
+                <option value="Other">Other</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="O-level">O-level</option>
+                <option value="A-level">A-level</option>
+                <option value="BSC">BSC</option>
+                <option value="MSC">MSC</option>
+                <option value="Inter">Inter</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="modalDesc">Descripton</label>
+            <div>
+              <textarea name="desc" placeholder="Enter Description Here.." rows="3" class="form-control" id="modalDesc"required></textarea>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="image">File input</label>
+            <input type="file" name="fileimg" class="form-control-file" id="modalImage" aria-describedby="fileHelp" required>
+            <small id="fileHelp" class="form-text text-muted">Only image files are allowed .</small>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button id="modal-btn" type="submit" class="btn btn-success">Post</button>
+            </div>
+          </div>
+        </form>
+
+
+
+
+
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- // // //  // // //  // // //  // // //  // // //  // // //  // // //  // // //  // // //  -->
+<!-- Profile Modal -->
+<!-- Modal -->
+<div class="modal fade" id="UserModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">
+           Profile
+        </h4>
+        <button type="button" class="close" data-dismiss="modal">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        
+          <div class="card my-4 card-outline-primary">
+             <!-- <h5 class="card-header card-inverse card-primary" style="color:white;">Profile</h5> -->
+              <div class="card-body">
+                  <!-- <img class="card-img-top img-circle img-responsive" src="http://placehold.it/750x300" alt="Card image cap"> -->
+               
+                      <img alt="User Pic" src="" id="modalProfileImg" class=" card-img img-circle img-responsive">
+                 
+                    <!--  <img alt="User Pic" src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" id="profile-image1" class=" card-img img-circle img-responsive"> -->
+                       
+                  <div class="container" >
+                          <h3 id="modalUsername"></h3>
+                          <p id="modalEmail"><b></b></p>
+                          <p id="modalContact"><b></b></p>
+                          <p id="modalCity"><b> </b></p>
+                          <p id="modalAddress"><b> </b></p>            
+                  </div>
+              </div>
+         </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
